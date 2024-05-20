@@ -10,4 +10,9 @@ public class Controller {
     public ResponseEntity<String> test(){
         return ResponseEntity.ok("안녕하세요.");
     }
+
+    @GetMapping("/test3")
+    public ResponseEntity<String> test3(){
+        return ResponseEntity.ok("Hello Github Actions!");
+    }
 }
