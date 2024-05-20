@@ -24,3 +24,12 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+tasks.register('copyPrivate') {
+	copy {
+		from './config'
+		include "application.yml"
+		into 'src/main/resources'
+	}
+}
+
