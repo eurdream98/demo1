@@ -13,6 +13,7 @@ public class Controller {
     }
 
 
+
     @GetMapping("/test3")
     public ResponseEntity<String> test3(){
         return ResponseEntity.ok("Hello Github Actions!");
